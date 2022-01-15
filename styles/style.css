@@ -1,23 +1,136 @@
 /* fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* common styles */
-body {
-    font-family: 'Poppins', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    border: 1px solid red;
-    margin-left: 120px;
+section {
+    display: flex;
+    flex-direction: column;
 }
 
 .section-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #562EFF;
+    margin-left: 120px;
+    margin-right: 120px;
+    border: 1px solid red;
 }
 
 .banner {
-    width: 1155px;
-    border: 1px solid orange;
+    margin: 42px 132px 69px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.banner-promotional-text {
+    width: 582px;
+    height: 270px;
+    overflow: hidden;
+    border: 1px solid blue;
+    position: relative;
+}
+
+.banner-promotional-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.button-text {
+    border-radius: 10px;
+    width: 150px;
+    height: 25px;
+    background-color: rgb(244,24,109);
+    color: white;
+    font-weight: 700;
+}
+
+.promotional-camera {
+    width: 440px;
+    height: 414px;
+    border: 1px solid green;
+}
+
+hr {
+    background: linear-gradient(to right, rgba(211,211,211,0), rgba(211,211,211,1),rgba(211,211,211,0));
+    height: 1px;
+    margin: 0 165px;
+    border: none;
+}
+
+.logo {
+    height: 110px;
+    margin: 0 165px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.collection-container {
+    /* width: 1047px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rebeccapurple;
+    margin-top: 100px;
+    margin-left: 196px;
+    margin-right: 197px;
+}
+
+.collection-container>.collection-title>h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+    border: 1px solid mediumseagreen;
+}
+
+.see-more a {
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-end;
+    color: rgb(224,44,109);
+    font-weight: 700;
+}
+
+footer {
+    margin-top: 80px;
+    background-color: rgb(10,8,38);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h2 {
+    margin-top: 50px;
+    text-align: center;
+}
+.footer h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer-logo ul {
+    margin-bottom: 50px;
+}
+.footer-logo ul li{
+    display: inline-block;
+    margin: 5px 15px;
 }
