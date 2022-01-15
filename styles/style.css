@@ -27,7 +27,7 @@ section {
 }
 
 .banner-promotional-text {
-    width: 582px;
+    width: 500px;
     height: 270px;
     overflow: hidden;
     border: 1px solid blue;
@@ -47,6 +47,7 @@ section {
     background-color: rgb(244,24,109);
     color: white;
     font-weight: 700;
+    margin-top: 30px
 }
 
 .promotional-camera {
@@ -74,6 +75,11 @@ hr {
     /* border: 2px solid black; */
     display: flex;
     justify-content: space-evenly;
+}
+
+.logo img {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .collection-container {
@@ -212,7 +218,13 @@ footer {
     }
 
     .logo {
-        margin: 0 ;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .collections {
@@ -226,7 +238,8 @@ footer {
     }
 
     .logo {
-        margin: 0 ;
+        flex-wrap: wrap;
+        margin: 0 auto;
     }
 
     .collections {
