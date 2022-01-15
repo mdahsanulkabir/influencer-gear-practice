@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-section {
+.main-section {
     display: flex;
     flex-direction: column;
 }
@@ -15,7 +15,6 @@ section {
 .section-title {
     margin-left: 120px;
     margin-right: 120px;
-    border: 1px solid red;
 }
 
 .banner {
@@ -23,14 +22,12 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
 }
 
 .banner-promotional-text {
     width: 500px;
     height: 270px;
     overflow: hidden;
-    border: 1px solid blue;
     position: relative;
 }
 
@@ -47,13 +44,12 @@ section {
     background-color: rgb(244,24,109);
     color: white;
     font-weight: 700;
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 .promotional-camera {
     width: 440px;
     height: 414px;
-    border: 1px solid green;
 }
 
 .camera-circle {
@@ -72,7 +68,6 @@ hr {
 .logo {
     height: 110px;
     margin: 0 165px;
-    /* border: 2px solid black; */
     display: flex;
     justify-content: space-evenly;
 }
@@ -83,11 +78,9 @@ hr {
 }
 
 .collection-container {
-    /* width: 1047px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid rebeccapurple;
     margin-top: 100px;
 }
 
@@ -101,7 +94,6 @@ hr {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     grid-gap: 20px;
-    border: 1px solid mediumseagreen;
 }
 
 .collection {
@@ -160,21 +152,18 @@ footer {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
 }
 
 .footer h2 {
     margin-top: 50px;
-    text-align: center;
-}
-.footer h4 {
-    margin-top: 10px;
-    text-align: center;
+    /* text-align: center; */
 }
 
+.footer h4,
 .footer-logo {
     margin-top: 10px;
-    text-align: center;
 }
 
 .footer-logo ul {
@@ -188,6 +177,7 @@ footer {
 @media (max-width: 767px) {
     .section-title {
         text-align: center;
+
     }
     .banner {
         padding: 0;
@@ -200,8 +190,9 @@ footer {
     }
 
     .banner-promotional-text h1 {
-        font-size: 50px;
+        font-size: 25px;
         text-align: center;
+        margin-top: 15px;
     }
 
     .banner-promotional-text p {
@@ -209,8 +200,9 @@ footer {
         text-align: center;
     }
 
-    .banner-promotional-text button {
-        
+    .banner-promotional-text .button {
+        display: flex;
+        justify-content: center;
     }
 
     .promotional-camera {
